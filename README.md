@@ -25,4 +25,4 @@ This project is licensed under the Bortol.in License - see the LICENSE.md file f
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/liviobortolin)
+* [MyOwnGitOfCourse](https://github.com/liviobortolin)
