@@ -59,7 +59,7 @@ Ich lernte Vagrant kennen, da ich dass bislang noch nie damit gearbeitet habe. S
 zusätzlicher Wissenstand in folgenden Schwerpunkten: 
 
 ##### Linux
--Wissen in Linux ->Y Pfad editieren, manipulieren, navigieren und kreiren hatte ich bereits vor dem Modul 
+-Wissen in Linux -> Pfad editieren, manipulieren, navigieren und kreiren hatte ich bereits vor dem Modul 
 ##### Virtualisierung
 -Grundprinzip war mir klar wie Virtualisierung funktionierte (UeK-340)
 ##### Vagrant
@@ -71,16 +71,26 @@ zusätzlicher Wissenstand in folgenden Schwerpunkten:
 -README.md file erstellt und editiert
 
 #### Tag 2
+Heute habe ich an meinem Vagrant file weiter gearbeitet. Ich bin mitlerweile so weit, dass ich mehrere VMs erstellt habe. Auf diese VMs kann ich mittels localhost zugreiffen. Jenach VM die ich erstellt habe, habe ich eine Portweiterleitung erstellt.
+
+Ich habe die Dokumentation erweitert und besser Strukturiert. Somit muss ich nur noch gewisse Skripts einfügen und testen, um sie anschliessend zu beschreiben.
+
+Ich lernte mehr über Vagrant kennen und fühle mich sicherer, diese files zu editieren. Es kommt jedoch immernoch zu komplikationen, was mich zu einem zusätzlichen Termin veranlasst, nochmals an diesem Projekt zu arbeiten.
+
 
 ##### Linux
-mit ";" mehrere Commands in einer Reihe ausführen
+-mit ";" mehrere Commands in einer Reihe ausführen
 ##### Virtualisierung
-
+-mitt ssh auf eine VM zugreiffen und wechseln
 ##### Vagrant
-
+-mehrere VM erstellen
+-Datenbank erstellen
 ##### Git
+-nichts neues
 
 ### Vagrantfile
+
+### Tests
 
 ### Reflexion
 
