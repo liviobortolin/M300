@@ -10,7 +10,7 @@ Usage: vagrant [optionen] <Befehl> [<args>]
 Mit dem Befehl "vagrant list-commands" werden alle Befehle aufgeführt:
 
 |Befehl          |Bedeutung
-|----------------|:---------------------------------------------------------------|
+|:---------------|:---------------------------------------------------------------|
 |autocomplete    |manages autocomplete installation on host                       |
 |box             |manages boxes: installation, removal, etc.                      |
 |cap             |checks and executes capability                                  |
