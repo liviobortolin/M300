@@ -9,44 +9,44 @@ Usage: vagrant [optionen] <Befehl> [<args>]
 
 Mit dem Befehl "vagrant list-commands" werden alle Befehle aufgeführt:
 
-Befehl          Bedeutung
-|--------------|:--------------------------------------------------------------:
-autocomplete    manages autocomplete installation on host                       
-box             manages boxes: installation, removal, etc.                      
-cap             checks and executes capability                                  
-cloud           manages everything related to Vagrant Cloud
-destroy         stops and deletes all traces of the vagrant machine
-docker-exec     attach to an already-running docker container
-docker-logs     outputs the logs from the Docker container
-docker-run      run a one-off command in the context of a container
-global-status   outputs status Vagrant environments for this user
-halt            stops the vagrant machine
-help            shows the help for a subcommand
-init            initializes a new Vagrant environment by creating a Vagrantfile
-list-commands   outputs all available Vagrant subcommands, even non-primary ones
-login           
-package         packages a running vagrant environment into a box
-plugin          manages plugins: install, uninstall, update, etc.
-port            displays information about guest port mappings
-powershell      connects to machine via powershell remoting
-provider        show provider for this environment
-provision       provisions the vagrant machine 
-rdp             connects to machine via RDP
-reload          restarts vagrant machine, loads new Vagrantfile configuration
-resume          resume a suspended vagrant machine
-rsync           syncs rsync synced folders to remote machine
-rsync-auto      syncs rsync synced folders automatically when files change
-snapshot        manages snapshots: saving, restoring, etc.
-ssh             connects to machine via SSH
-ssh-config      outputs OpenSSH valid configuration to connect to the machine
-status          outputs status of the vagrant machine
-suspend         suspends the machine
-up              starts and provisions the vagrant environment
-upload          upload to machine via communicator
-validate        validates the Vagrantfile
-version         prints current and latest Vagrant version
-winrm           executes commands on a machine via WinRM
-winrm-config    outputs WinRM configuration to connect to the machine
+|Befehl          |Bedeutung
+|----------------|:---------------------------------------------------------------|
+|autocomplete    |manages autocomplete installation on host                       |
+|box             |manages boxes: installation, removal, etc.                      |
+|cap             |checks and executes capability                                  |
+|cloud           |manages everything related to Vagrant Cloud
+|destroy         |stops and deletes all traces of the vagrant machine
+|docker-exec     |attach to an already-running docker container
+|docker-logs     |outputs the logs from the Docker container
+|docker-run      |run a one-off command in the context of a container
+|global-status   |outputs status Vagrant environments for this user
+|halt            |stops the vagrant machine
+|help            |shows the help for a subcommand
+|init            |initializes a new Vagrant environment by creating a Vagrantfile
+|list-commands   |outputs all available Vagrant subcommands, even non-primary ones
+|login           |
+|package         |packages a running vagrant environment into a box
+|plugin          |manages plugins: install, uninstall, update, etc.
+|port            |displays information about guest port mappings
+|powershell      |connects to machine via powershell remoting
+|provider        |show provider for this environment
+|provision       |provisions the vagrant machine 
+|rdp             |connects to machine via RDP
+|reload          |restarts vagrant machine, loads new Vagrantfile configuration
+|resume          |resume a suspended vagrant machine
+|rsync           |syncs rsync synced folders to remote machine
+|rsync-auto      |syncs rsync synced folders automatically when files change
+|snapshot        |manages snapshots: saving, restoring, etc.
+|ssh             |connects to machine via SSH
+|ssh-config      |outputs OpenSSH valid configuration to connect to the machine
+|status          |outputs status of the vagrant machine
+|suspend         |suspends the machine
+|up              |starts and provisions the vagrant environment
+|upload          |upload to machine via communicator
+|validate        |validates the Vagrantfile
+|version         |prints current and latest Vagrant version
+|winrm           |executes commands on a machine via WinRM
+|winrm-config    |outputs WinRM configuration to connect to the machine
 
 
 ### Lerndokumentation
