@@ -9,9 +9,9 @@ Usage: vagrant [optionen] <Befehl> [<args>]
 
 Mit dem Befehl "vagrant list-commands" werden alle Befehle aufgeführt:
 
-* |autocomplete    |manages autocomplete installation on host
-* |box             |manages boxes: installation, removal, etc.
-* |cap             |checks and executes capability
+* |autocomplete    |manages autocomplete installation on host                       |
+* |box             |manages boxes: installation, removal, etc.                      |
+* |cap             |checks and executes capability                                  |
 * |cloud           |manages everything related to Vagrant Cloud
 * |destroy         |stops and deletes all traces of the vagrant machine
 * |docker-exec     |attach to an already-running docker container
