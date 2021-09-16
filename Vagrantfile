@@ -1,25 +1,39 @@
 Vagrant.configure(2) do |config|
-  config.vm.box = "ubuntu/xenial64"
-  config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
-  config.vm.synced_folder ".", "/var/www/html"  
-config.vm.provider "virtualbox" do |vb|
+  
+  config.vm.define "web" do |web|
+  web.vm.box = "ubuntu/xenial64"
+  web.vm.hostname = "web01"
+  web.vm.network "private_network", ip:"192.168.10.150" 
+  web.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true  
+web.vm.provider "virtualbox" do |vb|
   vb.memory = "512"  
 end
-config.vm.provision "shell", inline: <<-SHELL
-  # Packages vom lokalen Server holen
-  # sudo sed -i -e"1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main restricted" /etc/apt/sources.list 
-  sudo apt-get update
-  sudo apt-get -y install apache2 
+web.vm.synced_folder ".", "/var/www/html"
+web.vm.provision "shell", inline: <<-SHELL
+sudo apt-get update
+sudo apt-get -y install debconf-utils apache2 nmap
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password admin'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password admin'
+sudo apt-get -y install php libapache2-mod-php php-curl php-cli php-mysql php-gd mysql-client  
+# Admininer SQL UI 
+sudo mkdir /usr/share/adminer
+sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
+sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
+echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
+sudo a2enconf adminer.conf 
+sudo service apache2 restart 
+echo '127.0.0.1 localhost web01\n192.168.55.100 db01' > /etc/hosts
 SHELL
 end
 
-Vagrant.configure(2) do |config|
-  config.vm.box = "ubuntu/xenial64"
-  config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
-config.vm.provider "virtualbox" do |vb|
+config.vm.define "db" do |db|
+  db.vm.box = "ubuntu/xenial64"
+db.vm.provider "virtualbox" do |vb|
   vb.memory = "1024"  
 end
-config.vm.provision "shell", inline: <<-SHELL 
+db.vm.hostname = "db01"
+db.vm.network "private_network", ip:"192.168.10.151"
+db.vm.provision "shell", inline: <<-SHELL
     # Debug ON!!!
     set -o xtrace
 	sudo apt-get update
@@ -37,6 +51,31 @@ config.vm.provision "shell", inline: <<-SHELL
 	sudo service apache2 restart 
 SHELL
 end
+
+config.vm.define "fw" do |fw|
+  fw.vm.box = "ubuntu/xenial64"
+fw.vm.provider "virtualbox" do |vb|
+  vb.memory = "1024"  
+end
+fw.vm.hostname = "fw01"
+fw.vm.network "private_network", ip:"192.168.10.152"
+fw.vm.provision "shell", inline: <<-SHELL
+sudo apt-get update
+#schliessen aller Ports
+sudo ufw deny out to any
+#ssh port öffnen
+sudo ufw allow from any to any port 22
+#http & https port öffnen
+sudo ufw allow from any to any port 80
+sudo ufw allow from any to any port 443
+sudo ufw enable 
+SHELL
+end
+
+
+end
+
+# commented out:
 
   # -*- mode: ruby -*-
   # vi: set ft=ruby :
