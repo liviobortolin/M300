@@ -216,48 +216,12 @@ Diese VM habe ich mit dem Befehl `vagrant up` gestartet. Auch hier musste ich im
 [4. Sicherheitsmassnahmen sind dokumentiert](#4-sicherheitsmassnahmen-sind-dokumentiert)
 
 ### 1. Firewall eingerichtet inkl. Rules
-Für die Sicherheit meines Systems ist die korrekte Konfiguration der Firewall sehr wichtig.
-Um die Firewall zu installieren verwendete ich folgenden Befehl:
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild12.png "cd")
-
-Ich entschied mich für den Rules-Typ deny any. Hierbei werden alle Ports geschlossen und einzelne Ports werden geöffnet. Anschliessend öffnete ich die Ports 22, 80 sowie 443. Damit sind nur die essenziellsten Ports geöffnet und die Sicherheit bleibt gewährt. Mit dem Befehl sudo ufw enale, aktiviere ich die Firewall. Ufw ist die Bezeichnung der verwendeten Firewall. 
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild13.png "cd")
 
 ### 2. Reverse-Proxy eingerichtet
-Gleich wie bei der Firewall muss zuerst der Proxy-Dienst installiert werden. Dazu verwendete ich folgenden Befehl. 
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild14.png "cd")
-
-Um den Proxy anschliessend benutzen zu können musste ich einige Module aktivieren:
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild15.png "cd")
-
-Danach konfigurierte ich die nötigen Einstellungen für den Reverse Proxy:
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild16.png "cd")
 
 ### 3. Benutzer- und Rechtevergabe ist eingerichtet
-Als erstes erstellte ich Gruppenordner
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild17.png "cd")
-
-Nun erstellte ich insgesamt zwei Benutzer:
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild18.png "cd")
-
-Da die rechtevergabe grundsätzlich viel sinnvoller und sicherer ist, wenn dies über eine Gruppe gemacht wird, erstellte ich Gruppen. 
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild19.png "cd")
-
-Nun fügte ich die Benutzer den Gruppen hinzu.
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild20.png "cd")
-
-Um nun den Gruppen auf deren Gruppenordner Berechtigung zu geben benutzte ich folgende Befehle:
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild21.png "cd")
 
 ### 4. Sicherheitsmassnahmen sind dokumentiert
 -   Lediglich der Port 80 des Web-Frontends und der Port 8080 der API wurden nach Aussen freigegeben.
