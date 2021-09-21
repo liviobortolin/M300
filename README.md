@@ -224,10 +224,7 @@ Diese VM habe ich mit dem Befehl `vagrant up` gestartet. Auch hier musste ich im
 
 
 ### 4. Sicherheitsmassnahmen sind dokumentiert
--   Lediglich der Port 80 des Web-Frontends und der Port 8080 der API wurden nach Aussen freigegeben.
--	Durch den Reverse Proxy sind die Devices im LAN von aussen nicht einsehbar.
--	Mit den strengen Firewall Regeln können wir das eindringen über offene Ports grösstenteils vermeiden.
--	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
+
 
 
 ## 5. Kriterium
@@ -239,16 +236,14 @@ Diese VM habe ich mit dem Befehl `vagrant up` gestartet. Auch hier musste ich im
 [6. Reflexion](#7-reflexion)
 
 ### 1. Kreativität
-Ich denke die Kreativität ist genügend hoch. In dieser Arbeit habe ich probiert möglichst alles selbst zu machen und meine eigene Gedanken umzusetzen. Es wurden viele verschiedene Dinge umgesetzt, weshalb ich die Kreativtät als erfüllt empfinde. 
+ 
 
 ### 2. Komplexität
-Da ich mehrere verschiedene Dienste zur Verfügung gestellt habe, finde ich auch, dass mein Vagrant-File die Komplexität erfüllt. A
+
 
 ### 3. Umfang
-Wie bereits erwähnt setzte ich mehrere Dienste um, was sich auch in der länge der Vagrantfiles wiederspiegelt. Ich denke mit knapp 120 Zeilen ist die Umfang erfüllt.
 
 ### 4. Authentifizierung und Autorisierung via LDAP
-Die 4. Authentifizierung und Autorisierung via LDAP wurde ab der Zeile 100 im Vagrant-File umgesetzt. 
 
 ### 5. Vergleich Vorwissen - Wissenszuwachs
 
