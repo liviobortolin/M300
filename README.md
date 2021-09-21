@@ -14,11 +14,11 @@ Folgend erbringe ich meine Leistungsnachweise für die Lernbeurteilung 2 des Mod
 
 ## K1
 Umbebung auf eigenem Notebook eingerichtet und funktionsfähig
-- [x] [1. VirtualBox](#1-virtualbox)
-- [x] [2. Vagrant](#2-vagrant)
-- [x] [3. Visualstudio-Code](#3-visualstudio-code)
-- [x] [4. Git-Client](#4-git-client)
-- [x] [5. SSH-Key für Client erstellen](#5-ssh-key-für-client-erstellen)
+[1. VirtualBox](#1-virtualbox)
+[2. Vagrant](#2-vagrant)
+[3. Visualstudio-Code](#3-visualstudio-code)
+[4. Git-Client](#4-git-client)
+[5. SSH-Key für Client erstellen](#5-ssh-key-für-client-erstellen)
 
 ### 1. Virtualbox
 
@@ -39,12 +39,12 @@ Umbebung auf eigenem Notebook eingerichtet und funktionsfähig
 
 ## K2
 Eigene Lernumgebung (PLE) ist eingerichtet
-- [x] [1. GitHub oder Gitlab-Account ist erstellt](#1-github-oder-gitlab-account-ist-erstellt)
-- [x] [2. Git-Client wurde verwendet](#2-git-client-wurde-verwendet)
-- [x] [3. Dokumentation ist als Mark Down vorhanden](#3-dokumentation-ist-als-mark-down-vorhanden)
-- [x] [4. Mark down-Editor ausgewählt und eingerichtet](#4-mark-down-editor-ausgewählt-und-eingerichtet)
-- [x] [5. Persönlicher Wissenstand](#5-persönlicher-wissenstand)
-- [x] [6. Wichtige Lernschritte sind dokumentiert](#6-wichtige-lernschritte-sind-dokumentiert)
+[1. GitHub oder Gitlab-Account ist erstellt](#1-github-oder-gitlab-account-ist-erstellt)
+[2. Git-Client wurde verwendet](#2-git-client-wurde-verwendet)
+[3. Dokumentation ist als Mark Down vorhanden](#3-dokumentation-ist-als-mark-down-vorhanden)
+[4. Mark down-Editor ausgewählt und eingerichtet](#4-mark-down-editor-ausgewählt-und-eingerichtet)
+[5. Persönlicher Wissenstand](#5-persönlicher-wissenstand)
+[6. Wichtige Lernschritte sind dokumentiert](#6-wichtige-lernschritte-sind-dokumentiert)
 
 ### 1. GitHub oder Gitlab-Account ist erstellt
 GitHub Account: https://github.com/liviobortolin
@@ -122,11 +122,11 @@ Ich habe immernoch schwierigkeiten mit gewissen Fehlermeldungen, diese werde ich
 
 
 ## K3
-- [x] [1. Bestehende vm aus Vagrant-Cloud einrichten](#1-bestehende-vm-aus-vagrant-cloud-einrichten)
-- [x] [2. Kennt die Vagrant-Befehle](#2-kennt-die-vagrant-befehle)
-- [x] [3. Eingerichtete Umgebung ist dokumentiert](#3-eingerichtete-umgebung-ist-dokumentiert)
-- [x] [4. Funktionsweise getestet inkl. Dokumentation der Testfälle](#4-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
-- [x] [5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt](#5-andere-vorgefertigte-vm-auf-eigenem-notebook-aufgesetzt)
+[1. Bestehende vm aus Vagrant-Cloud einrichten](#1-bestehende-vm-aus-vagrant-cloud-einrichten)
+[2. Kennt die Vagrant-Befehle](#2-kennt-die-vagrant-befehle)
+[3. Eingerichtete Umgebung ist dokumentiert](#3-eingerichtete-umgebung-ist-dokumentiert)
+[4. Funktionsweise getestet inkl. Dokumentation der Testfälle](#4-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
+[5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt](#5-andere-vorgefertigte-vm-auf-eigenem-notebook-aufgesetzt)
 
 ### 1. Bestehende vm aus Vagrant-Cloud einrichten
 
@@ -210,10 +210,10 @@ Diese VM habe ich mit dem Befehl `vagrant up` gestartet. Auch hier musste ich im
 
 
 ## K4
-- [x] [1. Firewall eingerichtet inkl. Rules](#1-firewall-eingerichtet-inkl-rules)
-- [x] [2. Reverse-Proxy eingerichtet](#2-reverse-proxy-eingerichtet)
-- [x] [3. Benutzer- und Rechtevergabe ist eingerichtet](#3-benutzer--und-rechtevergabe-ist-eingerichtet)
-- [x] [4. Sicherheitsmassnahmen sind dokumentiert](#4-sicherheitsmassnahmen-sind-dokumentiert)
+[1. Firewall eingerichtet inkl. Rules](#1-firewall-eingerichtet-inkl-rules)
+[2. Reverse-Proxy eingerichtet](#2-reverse-proxy-eingerichtet)
+[3. Benutzer- und Rechtevergabe ist eingerichtet](#3-benutzer--und-rechtevergabe-ist-eingerichtet)
+[4. Sicherheitsmassnahmen sind dokumentiert](#4-sicherheitsmassnahmen-sind-dokumentiert)
 
 ### 1. Firewall eingerichtet inkl. Rules
 Für die Sicherheit meines Systems ist die korrekte Konfiguration der Firewall sehr wichtig.
@@ -267,12 +267,12 @@ Um nun den Gruppen auf deren Gruppenordner Berechtigung zu geben benutzte ich fo
 
 
 ## 5. Kriterium
-- [x] [1. Kreativität](#1-kreativität)
-- [x] [2. Komplexität](#2-komplexität)
-- [x] [3. Umfang](#3-umfang)
-- [x] [4. Authentifizierung und Autorisierung via LDAP](#4-authentifizierung-und-autorisierung-via-ldap)
-- [x] [5. Vergleich Vorwissen - Wissenszuwachs](#6-vergleich-vorwissen---wissenszuwachs)
-- [x] [6. Reflexion](#7-reflexion)
+[1. Kreativität](#1-kreativität)
+[2. Komplexität](#2-komplexität)
+[3. Umfang](#3-umfang)
+[4. Authentifizierung und Autorisierung via LDAP](#4-authentifizierung-und-autorisierung-via-ldap)
+[5. Vergleich Vorwissen - Wissenszuwachs](#6-vergleich-vorwissen---wissenszuwachs)
+[6. Reflexion](#7-reflexion)
 
 ### 1. Kreativität
 Ich denke die Kreativität ist genügend hoch. In dieser Arbeit habe ich probiert möglichst alles selbst zu machen und meine eigene Gedanken umzusetzen. Es wurden viele verschiedene Dinge umgesetzt, weshalb ich die Kreativtät als erfüllt empfinde. 
