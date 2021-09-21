@@ -1,10 +1,140 @@
 # M300 - Plattformübergreifende Dienste in ein Netzwerk integrieren
+
 ## LB2 Vagrantfile
 
-### Einleitung
+Folgend erbringe ich meine Leistungsnachweise für die Lernbeurteilung 2 des Modul 300.
+
+# Inhaltsverzeichnis
+- [K1](#K1)
+- [K2](#K2)
+- [K3](K3)
+- [K4](#K4)
+- [K5](#K5)
 
 
-#### Vagrant-Befehle
+## K1
+Umbebung auf eigenem Notebook eingerichtet und funktionsfähig
+- [x] [1. VirtualBox](#1-virtualbox)
+- [x] [2. Vagrant](#2-vagrant)
+- [x] [3. Visualstudio-Code](#3-visualstudio-code)
+- [x] [4. Git-Client](#4-git-client)
+- [x] [5. SSH-Key für Client erstellen](#5-ssh-key-für-client-erstellen)
+
+### 1. Virtualbox
+
+
+### 2. Vagrant
+
+
+### 3. Visualstudio-Code
+
+
+
+### 4. Git-Client
+
+
+### 5. SSH-Key für Client erstellen
+
+
+
+## K2
+Eigene Lernumgebung (PLE) ist eingerichtet
+- [x] [1. GitHub oder Gitlab-Account ist erstellt](#1-github-oder-gitlab-account-ist-erstellt)
+- [x] [2. Git-Client wurde verwendet](#2-git-client-wurde-verwendet)
+- [x] [3. Dokumentation ist als Mark Down vorhanden](#3-dokumentation-ist-als-mark-down-vorhanden)
+- [x] [4. Mark down-Editor ausgewählt und eingerichtet](#4-mark-down-editor-ausgewählt-und-eingerichtet)
+- [x] [5. Persönlicher Wissenstand](#5-persönlicher-wissenstand)
+- [x] [6. Wichtige Lernschritte sind dokumentiert](#6-wichtige-lernschritte-sind-dokumentiert)
+
+### 1. GitHub oder Gitlab-Account ist erstellt
+GitHub Account: https://github.com/liviobortolin
+
+### 2. Git-Client wurde verwendet
+
+
+### 3. Dokumentation ist als Mark Down vorhanden
+Die Dokumentation ist in der README.md Datei.
+
+### 4. Mark down-Editor ausgewählt und eingerichtet
+Die README.md Datei habe ich mit GitHub Desktop jeweils im Visualstudio geöffnet und editiert.
+
+### 5. Persönlicher Wissenstand
+
+Anbei dokumentiere ich meinen Wissenstand und definiere meinen Fortschritt.
+
+#### Tag 1 25.08.21
+Der Fokus des heutigen Tages ist die initialisierung des Modul. Heute habe ich meine Arbeitsstation aufgebaut. Dies beinhaltete, dass ich Virtualbox, GIThub-Desktop, Visualstudio und Vagrant installiert und konfigurierte. 
+
+Ich lernte Vagrant kennen, da ich dass bislang noch nie damit gearbeitet habe. Somit konnte ich viel neues lernen. Automationist ein Schwerpunkt in der IT, welcher mich sehr interessiert. Somit kann ich auch persöhnlich viel von diesem Modul profitieren.
+
+zusätzlicher Wissenstand in folgenden Schwerpunkten: 
+
+##### Linux
+-Wissen in Linux -> Pfad editieren, manipulieren, navigieren und kreiren hatte ich bereits vor dem Modul 
+##### Virtualisierung
+-Grundprinzip war mir klar wie Virtualisierung funktionierte (UeK-340)
+##### Vagrant
+-Vagrant neu kennengelernt
+-Vagrantfile erstellt und editiert
+-Vagrant init/up/destroy -f
+##### Git
+-Git Repository erstellt
+-README.md file erstellt und editiert
+
+#### Tag 2 08.09.2021
+Heute habe ich an meinem Vagrant file weiter gearbeitet. Ich bin mitlerweile so weit, dass ich mehrere VMs erstellt habe. Auf diese VMs kann ich mittels localhost zugreiffen. Jenach VM die ich erstellt habe, habe ich eine Portweiterleitung erstellt.
+
+Ich habe die Dokumentation erweitert und besser Strukturiert. Somit muss ich nur noch gewisse Skripts einfügen und testen, um sie anschliessend zu beschreiben.
+
+Ich lernte mehr über Vagrant kennen und fühle mich sicherer, diese files zu editieren. Es kommt jedoch immernoch zu komplikationen, was mich zu einem zusätzlichen Termin veranlasst, nochmals an diesem Projekt zu arbeiten.
+
+
+##### Linux
+-mit ";" mehrere Commands in einer Reihe ausführen
+##### Virtualisierung
+-mitt ssh auf eine VM zugreiffen und wechseln
+##### Vagrant
+-mehrere VM erstellen
+-Datenbank erstellen
+##### Git
+-nichts neues
+
+#### Tag 3 22.09.2021
+Ich habe heute an meinem Vagrant file weiter gearbeitet. Nun da ich mehere VMs erstellen kann, will ich diese möglichst gut konfigurieren, so dass ich auf diese Zugreiffen kann. Im besten fall über Web.
+
+In der Dokumentation fehlen nur noch die folgenden Tage, an denen ich noch am Vagrantfile arbeiten werde.
+Zudem muss ich noch meine Sktipts innerhalb dieser Dokumentation beschreiben und die Testfälle erstellen.
+
+Je mehr ich über Vagrant lerne, desto einfacher fählt es mir gewisse VM zu strukturieren.
+Ich habe immernoch schwierigkeiten mit gewissen Fehlermeldungen, diese werde ich jedoch in den nächsten paar male korrigieren.
+
+
+##### Linux
+-Directory orientierung
+##### Virtualisierung
+-anlegen von Verzeichnissen und diese editieren
+##### Vagrant
+-innerhalb einer VM ein Index.html file ändern
+##### Git
+-nichts neues
+
+### 6. Wichtige Lernschritte sind dokumentiert
+
+
+## K3
+- [x] [1. Bestehende vm aus Vagrant-Cloud einrichten](#1-bestehende-vm-aus-vagrant-cloud-einrichten)
+- [x] [2. Kennt die Vagrant-Befehle](#2-kennt-die-vagrant-befehle)
+- [x] [3. Eingerichtete Umgebung ist dokumentiert](#3-eingerichtete-umgebung-ist-dokumentiert)
+- [x] [4. Funktionsweise getestet inkl. Dokumentation der Testfälle](#4-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
+- [x] [5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt](#5-andere-vorgefertigte-vm-auf-eigenem-notebook-aufgesetzt)
+
+### 1. Bestehende vm aus Vagrant-Cloud einrichten
+
+vagrant up
+
+
+### 2. Kennt die Vagrant-Befehle
+
 Usage: vagrant [optionen] <Befehl> [<args>]
 
 Mit dem Befehl "vagrant list-commands" werden alle Befehle aufgeführt:
@@ -48,75 +178,115 @@ Mit dem Befehl "vagrant list-commands" werden alle Befehle aufgeführt:
 |winrm           |executes commands on a machine via WinRM
 |winrm-config    |outputs WinRM configuration to connect to the machine
 
+### 3. Eingerichtete Umgebung ist dokumentiert
 
-### Lerndokumentation
-
-Anbei dokumentiere ich meinen Wissenstand und definiere meinen Fortschritt.
-
-#### Tag 1
-Der Fokus des heutigen Tages ist die initialisierung des Modul. Heute habe ich meine Arbeitsstation aufgebaut. Dies beinhaltete, dass ich Virtualbox, GIThub-Desktop, Visualstudio und Vagrant installiert und konfigurierte. 
-
-Ich lernte Vagrant kennen, da ich dass bislang noch nie damit gearbeitet habe. Somit konnte ich viel neues lernen. Automationist ein Schwerpunkt in der IT, welcher mich sehr interessiert. Somit kann ich auch persöhnlich viel von diesem Modul profitieren.
-
-zusätzlicher Wissenstand in folgenden Schwerpunkten: 
-
-##### Linux
--Wissen in Linux -> Pfad editieren, manipulieren, navigieren und kreiren hatte ich bereits vor dem Modul 
-##### Virtualisierung
--Grundprinzip war mir klar wie Virtualisierung funktionierte (UeK-340)
-##### Vagrant
--Vagrant neu kennengelernt
--Vagrantfile erstellt und editiert
--Vagrant init/up/destroy -f
-##### Git
--Git Repository erstellt
--README.md file erstellt und editiert
-
-#### Tag 2
-Heute habe ich an meinem Vagrant file weiter gearbeitet. Ich bin mitlerweile so weit, dass ich mehrere VMs erstellt habe. Auf diese VMs kann ich mittels localhost zugreiffen. Jenach VM die ich erstellt habe, habe ich eine Portweiterleitung erstellt.
-
-Ich habe die Dokumentation erweitert und besser Strukturiert. Somit muss ich nur noch gewisse Skripts einfügen und testen, um sie anschliessend zu beschreiben.
-
-Ich lernte mehr über Vagrant kennen und fühle mich sicherer, diese files zu editieren. Es kommt jedoch immernoch zu komplikationen, was mich zu einem zusätzlichen Termin veranlasst, nochmals an diesem Projekt zu arbeiten.
+#### Netzwerkplan
 
 
-##### Linux
--mit ";" mehrere Commands in einer Reihe ausführen
-##### Virtualisierung
--mitt ssh auf eine VM zugreiffen und wechseln
-##### Vagrant
--mehrere VM erstellen
--Datenbank erstellen
-##### Git
--nichts neues
 
-### Vagrantfile
 
-### Tests
+#### Umgebungsvariabeln
 
-### Reflexion
+cd nach C:/Users/Livio/Desktop/TBZ/BIST21/M300/repository/M300
 
-### GitHub README.md:
+"vagrant up"
 
-#### Authors
+#### Sicherheitsaspekte
 
-Contributors names and contact info
 
-Livio Bortolin
 
-#### Version History
 
-* 0.2
-    * added README-md file
-    * added commands to Vagrantfile
-* 0.1
-    * Initial Release
+### 4. Funktionsweise getestet inkl. Dokumentation der Testfälle
 
-#### License
 
-This project is licensed under the Bortol.in License - see the LICENSE.md file for details
 
-#### Acknowledgments
+### 5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt
 
-Inspiration, code snippets, etc.
-* [Source](https://github.com/mc-b/M300)
+Ich habe noch eine weitere VM auf dem Notebook aufgesetzt. Hierbei habe ich das Vagrant-File, welches unter dem folgenden Pfad liegt ausgeführt.
+
+https://github.com/mc-b/M300/tree/master/vagrant/db
+
+Diese VM habe ich mit dem Befehl `vagrant up` gestartet. Auch hier musste ich im Verzeichnis sein, in dem das Vagrant-File vorhanden war. 
+
+
+## K4
+- [x] [1. Firewall eingerichtet inkl. Rules](#1-firewall-eingerichtet-inkl-rules)
+- [x] [2. Reverse-Proxy eingerichtet](#2-reverse-proxy-eingerichtet)
+- [x] [3. Benutzer- und Rechtevergabe ist eingerichtet](#3-benutzer--und-rechtevergabe-ist-eingerichtet)
+- [x] [4. Sicherheitsmassnahmen sind dokumentiert](#4-sicherheitsmassnahmen-sind-dokumentiert)
+
+### 1. Firewall eingerichtet inkl. Rules
+Für die Sicherheit meines Systems ist die korrekte Konfiguration der Firewall sehr wichtig.
+Um die Firewall zu installieren verwendete ich folgenden Befehl:
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild12.png "cd")
+
+Ich entschied mich für den Rules-Typ deny any. Hierbei werden alle Ports geschlossen und einzelne Ports werden geöffnet. Anschliessend öffnete ich die Ports 22, 80 sowie 443. Damit sind nur die essenziellsten Ports geöffnet und die Sicherheit bleibt gewährt. Mit dem Befehl sudo ufw enale, aktiviere ich die Firewall. Ufw ist die Bezeichnung der verwendeten Firewall. 
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild13.png "cd")
+
+### 2. Reverse-Proxy eingerichtet
+Gleich wie bei der Firewall muss zuerst der Proxy-Dienst installiert werden. Dazu verwendete ich folgenden Befehl. 
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild14.png "cd")
+
+Um den Proxy anschliessend benutzen zu können musste ich einige Module aktivieren:
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild15.png "cd")
+
+Danach konfigurierte ich die nötigen Einstellungen für den Reverse Proxy:
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild16.png "cd")
+
+### 3. Benutzer- und Rechtevergabe ist eingerichtet
+Als erstes erstellte ich Gruppenordner
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild17.png "cd")
+
+Nun erstellte ich insgesamt zwei Benutzer:
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild18.png "cd")
+
+Da die rechtevergabe grundsätzlich viel sinnvoller und sicherer ist, wenn dies über eine Gruppe gemacht wird, erstellte ich Gruppen. 
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild19.png "cd")
+
+Nun fügte ich die Benutzer den Gruppen hinzu.
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild20.png "cd")
+
+Um nun den Gruppen auf deren Gruppenordner Berechtigung zu geben benutzte ich folgende Befehle:
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild21.png "cd")
+
+### 4. Sicherheitsmassnahmen sind dokumentiert
+-   Lediglich der Port 80 des Web-Frontends und der Port 8080 der API wurden nach Aussen freigegeben.
+-	Durch den Reverse Proxy sind die Devices im LAN von aussen nicht einsehbar.
+-	Mit den strengen Firewall Regeln können wir das eindringen über offene Ports grösstenteils vermeiden.
+-	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
+
+
+## 5. Kriterium
+- [x] [1. Kreativität](#1-kreativität)
+- [x] [2. Komplexität](#2-komplexität)
+- [x] [3. Umfang](#3-umfang)
+- [x] [4. Authentifizierung und Autorisierung via LDAP](#4-authentifizierung-und-autorisierung-via-ldap)
+- [x] [5. Vergleich Vorwissen - Wissenszuwachs](#6-vergleich-vorwissen---wissenszuwachs)
+- [x] [6. Reflexion](#7-reflexion)
+
+### 1. Kreativität
+Ich denke die Kreativität ist genügend hoch. In dieser Arbeit habe ich probiert möglichst alles selbst zu machen und meine eigene Gedanken umzusetzen. Es wurden viele verschiedene Dinge umgesetzt, weshalb ich die Kreativtät als erfüllt empfinde. 
+
+### 2. Komplexität
+Da ich mehrere verschiedene Dienste zur Verfügung gestellt habe, finde ich auch, dass mein Vagrant-File die Komplexität erfüllt. A
+
+### 3. Umfang
+Wie bereits erwähnt setzte ich mehrere Dienste um, was sich auch in der länge der Vagrantfiles wiederspiegelt. Ich denke mit knapp 120 Zeilen ist die Umfang erfüllt.
+
+### 4. Authentifizierung und Autorisierung via LDAP
+Die 4. Authentifizierung und Autorisierung via LDAP wurde ab der Zeile 100 im Vagrant-File umgesetzt. 
+
+### 5. Vergleich Vorwissen - Wissenszuwachs
+
+
+### 6. Reflexion
