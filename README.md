@@ -47,12 +47,12 @@ Anleitung: https://github.com/mc-b/M300/tree/master/10-Toolumgebung
 Den SSh-Key habe ich ebenfalls bereits vorinstalliert, weshalb ich auch diesen Schritt überspringen konnte.
 
 ## K2
-Eigene Lernumgebung (PLE) ist eingerichtet
-[1. GitHub oder Gitlab-Account ist erstellt](#1-github-oder-gitlab-account-ist-erstellt)
-[2. Git-Client wurde verwendet](#2-git-client-wurde-verwendet)
-[3. Dokumentation ist als Mark Down vorhanden](#3-dokumentation-ist-als-mark-down-vorhanden)
-[4. Mark down-Editor ausgewählt und eingerichtet](#4-mark-down-editor-ausgewählt-und-eingerichtet)
-[5. Persönlicher Wissenstand](#5-persönlicher-wissenstand)
+Eigene Lernumgebung (PLE) ist eingerichtet<br/>
+[1. GitHub oder Gitlab-Account ist erstellt](#1-github-oder-gitlab-account-ist-erstellt)<br/>
+[2. Git-Client wurde verwendet](#2-git-client-wurde-verwendet)<br/>
+[3. Dokumentation ist als Mark Down vorhanden](#3-dokumentation-ist-als-mark-down-vorhanden)<br/>
+[4. Mark down-Editor ausgewählt und eingerichtet](#4-mark-down-editor-ausgewählt-und-eingerichtet)<br/>
+[5. Persönlicher Wissenstand](#5-persönlicher-wissenstand)<br/>
 [6. Wichtige Lernschritte sind dokumentiert](#6-wichtige-lernschritte-sind-dokumentiert)
 
 ### 1. GitHub oder Gitlab-Account ist erstellt
@@ -138,10 +138,10 @@ Ich habe immernoch schwierigkeiten mit gewissen Fehlermeldungen, diese werde ich
 Ich glaube, ich habe die meisten meiner Lernschritte im Markup festgehalten. Ich werde hier jedoch noch einiges besprechen. Zuerst hatten wir Zeit, uns mit der Vagrant-Umgebung vertraut zu machen und grundlegende Befehle auszuprobieren, was uns sehr geholfen hat. Auch die Fehlersuche hat mir sehr geholfen und ich habe viel daraus gelernt. Tatsächlich beinhaltet das gesamte Projekt nur Lernschritte, und es fällt mir schwer, hier das Wichtigste zusammenzufassen.
 
 ## K3
-[1. Bestehende vm aus Vagrant-Cloud einrichten](#1-bestehende-vm-aus-vagrant-cloud-einrichten)
-[2. Kennt die Vagrant-Befehle](#2-kennt-die-vagrant-befehle)
-[3. Eingerichtete Umgebung ist dokumentiert](#3-eingerichtete-umgebung-ist-dokumentiert)
-[4. Funktionsweise getestet inkl. Dokumentation der Testfälle](#4-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
+[1. Bestehende vm aus Vagrant-Cloud einrichten](#1-bestehende-vm-aus-vagrant-cloud-einrichten)<br/>
+[2. Kennt die Vagrant-Befehle](#2-kennt-die-vagrant-befehle)<br/>
+[3. Eingerichtete Umgebung ist dokumentiert](#3-eingerichtete-umgebung-ist-dokumentiert)<br/>
+[4. Funktionsweise getestet inkl. Dokumentation der Testfälle](#4-funktionsweise-getestet-inkl-dokumentation-der-testfälle)<br/>
 [5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt](#5-andere-vorgefertigte-vm-auf-eigenem-notebook-aufgesetzt)
 
 ### 1. Bestehende vm aus Vagrant-Cloud einrichten
@@ -236,9 +236,10 @@ Zuerst wehchsle ich zum Verzeichnis, auf dem sich die VM befinde und führe ansc
 
 
 ## K4
-[1. Firewall eingerichtet inkl. Rules](#1-firewall-eingerichtet-inkl-rules)
-[2. Reverse-Proxy eingerichtet](#2-reverse-proxy-eingerichtet)
-[3. Benutzer- und Rechtevergabe ist eingerichtet](#3-benutzer--und-rechtevergabe-ist-eingerichtet)
+Zusätzliche Bewertungspunkte<br/>
+[1. Firewall eingerichtet inkl. Rules](#1-firewall-eingerichtet-inkl-rules)<br/>
+[2. Reverse-Proxy eingerichtet](#2-reverse-proxy-eingerichtet)<br/>
+[3. Benutzer- und Rechtevergabe ist eingerichtet](#3-benutzer--und-rechtevergabe-ist-eingerichtet)<br/>
 [4. Sicherheitsmassnahmen sind dokumentiert](#4-sicherheitsmassnahmen-sind-dokumentiert)
 
 ### 1. Firewall eingerichtet inkl. Rules
