@@ -2,7 +2,7 @@
 
 Enclosed you will find two folders with contents for a schoolproject.
 
-LB2 is containing a vagrantfile with automated installation of a Webserver, reverseporxyserver and a firewall.
+LB2 is containing a vagrantfile with automated installation of a Webserver, reverseproxyserver and a firewall.
 
 LB3 is containing a Dockerfile.
 
