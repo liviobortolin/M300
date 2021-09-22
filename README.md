@@ -13,11 +13,11 @@ Folgend erbringe ich meine Leistungsnachweise für die Lernbeurteilung 2 des Mod
 
 
 ## K1
-Umbebung auf eigenem Notebook eingerichtet und funktionsfähig
+Umbebung auf eigenem Notebook eingerichtet und funktionsfähig<br/>
 [1. VirtualBox](#1-virtualbox)<br/> 
 [2. Vagrant](#2-vagrant)<br/>
-[3. Visualstudio-Code](#3-visualstudio-code)
-[4. Git-Client](#4-git-client)
+[3. Visualstudio-Code](#3-visualstudio-code)<br/>
+[4. Git-Client](#4-git-client)<br/>
 [5. SSH-Key für Client erstellen](#5-ssh-key-für-client-erstellen)
 
 ### 1. Virtualbox
