@@ -56,6 +56,7 @@ Eigene Lernumgebung (PLE) ist eingerichtet<br/>
 [6. Wichtige Lernschritte sind dokumentiert](#6-wichtige-lernschritte-sind-dokumentiert)
 
 ### 1. GitHub oder Gitlab-Account ist erstellt
+
 GitHub Account: https://github.com/liviobortolin
 
 Ich habe während dieser Arbeit Github-Desktop verwendet. Somit konnte ich alle commit, push, fetch und pull Befehle über ein UI erstellen.
