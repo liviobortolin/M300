@@ -22,20 +22,29 @@ Umbebung auf eigenem Notebook eingerichtet und funktionsfähig
 
 ### 1. Virtualbox
 
+Nach Anleitung des Lehrers installiert und ausgeführt.
+
+Anleitung: https://github.com/mc-b/M300/tree/master/10-Toolumgebung
 
 ### 2. Vagrant
 
+Nach Anleitung des Lehrers installiert und ausgeführt.
+
+Anleitung: https://github.com/mc-b/M300/tree/master/10-Toolumgebung
 
 ### 3. Visualstudio-Code
 
-
+Visualstudio-Code hatte ich bereits vorinstalliert, weshalb ich diesen Schritt überspringen konnte.
 
 ### 4. Git-Client
 
+Nach Anleitung des Lehrers installiert und ausgeführt.
+
+Anleitung: https://github.com/mc-b/M300/tree/master/10-Toolumgebung
 
 ### 5. SSH-Key für Client erstellen
 
-
+Den SSh-Key habe ich ebenfalls bereits vorinstalliert, weshalb ich auch diesen Schritt überspringen konnte.
 
 ## K2
 Eigene Lernumgebung (PLE) ist eingerichtet
@@ -49,8 +58,13 @@ Eigene Lernumgebung (PLE) ist eingerichtet
 ### 1. GitHub oder Gitlab-Account ist erstellt
 GitHub Account: https://github.com/liviobortolin
 
+Ich habe während dieser Arbeit Github-Desktop verwendet. Somit konnte ich alle commit, push, fetch und pull Befehle über ein UI erstellen.
+
 ### 2. Git-Client wurde verwendet
 
+Wie vom Lehrer vorgeschlagen, nutze ich Git-Bash.
+
+Anleitung: https://github.com/mc-b/M300/tree/master/20-Infrastruktur
 
 ### 3. Dokumentation ist als Mark Down vorhanden
 Die Dokumentation ist in der README.md Datei.
@@ -120,6 +134,7 @@ Ich habe immernoch schwierigkeiten mit gewissen Fehlermeldungen, diese werde ich
 
 ### 6. Wichtige Lernschritte sind dokumentiert
 
+-->
 
 ## K3
 [1. Bestehende vm aus Vagrant-Cloud einrichten](#1-bestehende-vm-aus-vagrant-cloud-einrichten)
