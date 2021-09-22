@@ -1,7 +1,9 @@
-# M300-Services
-M300-Services von Livio Bortolin
+# M300 - Plattformübergreifende Dienste in ein Netzwerk integrieren
 
-In der folgenden Dokumentation werde ich den Leistungsnachweis zu der LB3 erbringen. 
+
+## LB2 Vagrantfile
+
+Folgend erbringe ich meine Leistungsnachweise für die Lernbeurteilung 3 des Modul 300. 
 
 # Inhaltsverzeichnis
 - [K1](#K1)
