@@ -1,4 +1,4 @@
-### GitHub README.md:
+### Integrate cross-platform services into a network
 
 Enclosed you will find two folders with contents for a schoolproject.
 
