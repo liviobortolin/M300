@@ -18,33 +18,6 @@ Vagrant.configure(2) do |config|
     SHELL
 end
 
-    config.vm.define "firewall" do |fw|
-    fw.vm.box = "ubuntu/xenial64"
-    fw.vm.provider "virtualbox" do |vb|
-      vb.memory = "1024" 
-
-    fw.vm.hostname = "fw01"
-    fw.vm.network "private_network", ip:"192.168.10.152"
-    fw.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true  
-end
-    fw.vm.synced_folder ".", "/var/www/html/", create: true
-    fw.vm.provision "shell", inline: <<-SHELL
-      sudo apt-get update
-      #schliessen aller Ports
-      sudo ufw deny out to any
-      #ssh port öffnen
-      sudo ufw allow 22
-      #http & https port öffnen
-      sudo ufw allow 70
-      sudo ufw allow 80
-      sudo ufw allow 90
-      sudo ufw allow 443
-      sudo ufw -f enable 
-      
-      
-     SHELL
-end
-
 # Enable agent forwarding over SSH connections
 config.ssh.forward_agent = true
 
@@ -59,7 +32,7 @@ config.vm.define "reverse-proxyserver" do |prx|
 
   prx.vm.hostname = "prx01"
   prx.vm.network "private_network", ip:"192.168.10.151"
-  prx.vm.network "forwarded_port", guest:90, host:9090, auto_correct: true 
+  prx.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true 
 end
 
   prx.vm.synced_folder ".", "/var/www/html/", create: true
@@ -68,7 +41,7 @@ end
     sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password #{mysql_password}"
     sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password #{mysql_password}"
     sudo apt-get -y install mysql-server
-       # Proxy-Module aktivieren
+      # Proxy-Module aktivieren
     sudo a2enmod proxy
     sudo a2enmod proxy_html
     sudo a2enmod proxy_http
@@ -165,7 +138,34 @@ end
       sudo apt-get install -y slapd ldap-utils phpldapadmin
       sudo sed -i -e's/dc=example,dc=com/dc=nodomain/' /etc/phpldapadmin/config.php
       SHELL
-
-end
+    end
+      
+    config.vm.define "firewall" do |fw|
+      fw.vm.box = "ubuntu/xenial64"
+      fw.vm.provider "virtualbox" do |vb|
+        vb.memory = "1024" 
+  
+      fw.vm.hostname = "fw01"
+      fw.vm.network "private_network", ip:"192.168.10.152"
+      fw.vm.network "forwarded_port", guest:90, host:9090, auto_correct: true  
+  end
+      fw.vm.synced_folder ".", "/var/www/html/", create: true
+      fw.vm.provision "shell", inline: <<-SHELL
+        sudo apt-get install ufw -y  
+        sudo apt-get update
+        #schliessen aller Ports
+        sudo ufw deny out to any
+        #ssh port öffnen
+        sudo ufw allow 22
+        #http & https port öffnen
+        sudo ufw allow 70
+        sudo ufw allow 80
+        sudo ufw allow 90
+        sudo ufw allow 443
+        sudo ufw -f enable 
+        
+        
+       SHELL
+  end
 
 end

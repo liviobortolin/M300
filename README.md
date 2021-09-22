@@ -102,14 +102,15 @@ Ich habe die Dokumentation erweitert und besser Strukturiert. Somit muss ich nur
 
 Ich lernte mehr über Vagrant kennen und fühle mich sicherer, diese files zu editieren. Es kommt jedoch immernoch zu komplikationen, was mich zu einem zusätzlichen Termin veranlasst, nochmals an diesem Projekt zu arbeiten.
 
+Nun da ich fertig bin, kann ich mein Vagrantfile abgebgen.
+
 
 ##### Linux
--mit ";" mehrere Commands in einer Reihe ausführen
+-f überall wo notwendig, anwenden
 ##### Virtualisierung
--mitt ssh auf eine VM zugreiffen und wechseln
+-nichts neues
 ##### Vagrant
--mehrere VM erstellen
--Datenbank erstellen
+-destroy Verhalten
 ##### Git
 -nichts neues
 
@@ -134,7 +135,7 @@ Ich habe immernoch schwierigkeiten mit gewissen Fehlermeldungen, diese werde ich
 
 ### 6. Wichtige Lernschritte sind dokumentiert
 
--->
+Ich glaube, ich habe die meisten meiner Lernschritte im Markup festgehalten. Ich werde hier jedoch noch einiges besprechen. Zuerst hatten wir Zeit, uns mit der Vagrant-Umgebung vertraut zu machen und grundlegende Befehle auszuprobieren, was uns sehr geholfen hat. Auch die Fehlersuche hat mir sehr geholfen und ich habe viel daraus gelernt. Tatsächlich beinhaltet das gesamte Projekt nur Lernschritte, und es fällt mir schwer, hier das Wichtigste zusammenzufassen.
 
 ## K3
 [1. Bestehende vm aus Vagrant-Cloud einrichten](#1-bestehende-vm-aus-vagrant-cloud-einrichten)
@@ -197,7 +198,7 @@ Mit dem Befehl "vagrant list-commands" werden alle Befehle aufgeführt:
 
 #### Netzwerkplan
 
-
+![Netzwerkplan](img/netzwerkplan.png)
 
 
 #### Umgebungsvariabeln
@@ -209,19 +210,29 @@ cd nach C:/Users/Livio/Desktop/TBZ/BIST21/M300/repository/M300
 #### Sicherheitsaspekte
 
 -Firewall
+-Benutzer authen
 
 
 ### 4. Funktionsweise getestet inkl. Dokumentation der Testfälle
 
-
+ Nr.| Beschreibung                                              | Kontrollie                                                                     | Soll-Situation      | Ist-Situation       | Bestanden? |
+|:-:|-                                                          |-                                                                               |-                    |-                    |:-:         |
+| 1 | `web` sollte anpingbar sein                               | ping 192.168.10.150                                                            | ping funktioniert   | ping funktioniert   | Y          |
+| 2 | `web` sollte mit ssh darauf zugegriffen werden            | vagrant ssh webserver                                                          | Zugriff erfolgreich | Zugriff erfolgreich | Y          |
+| 3 | `web` Apache Server funktioniert? via IP Zugriff          | http://192.168.10.150                                                          | Zugriff erfolgreich | Zugriff erfolgreich | Y          |
+| 4 | `fw` Firewall regeln sind aktiv                           | "sudo ufw status "                                                             | korrekt Anzeigen    | Regeln richtig      | Y          |
+| 5 | `prx` Zugriff SSH                                         | vagrant ssh reverse-proxserver                                                 | Zugriff erfolgreich | Zugriff erfolgreich | Y          |
+| 6 | `prx` sollte anpingbar sein                               | ping 192.168.10.151                                                            | ping erfolgreich    | ping erfolgreich    | Y          |
+| 7 | `prx` Die Gruppenordner wurden erstellt                   | "ll"                                                                           | Gruppen erstellt    | Gruppen erstellt    | Y          |
+| 8 | `prx` MySQL funktioniert                                  |  sudo service mysql status                                                     | service läuft       | Service läuft       | Y          |
 
 ### 5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt
 
-Ich habe noch eine weitere VM auf dem Notebook aufgesetzt. Hierbei habe ich das Vagrant-File, welches unter dem folgenden Pfad liegt ausgeführt.
+Eine vorgefertigte VM konnte ich unter folgender Adresse finden:
 
 https://github.com/mc-b/M300/tree/master/vagrant/db
 
-Diese VM habe ich mit dem Befehl `vagrant up` gestartet. Auch hier musste ich im Verzeichnis sein, in dem das Vagrant-File vorhanden war. 
+Zuerst wehchsle ich zum Verzeichnis, auf dem sich die VM befinde und führe anschliessend "vagrant up" aus
 
 
 ## K4
@@ -232,35 +243,63 @@ Diese VM habe ich mit dem Befehl `vagrant up` gestartet. Auch hier musste ich im
 
 ### 1. Firewall eingerichtet inkl. Rules
 
+"sudo apt-get install ufw -y" um die Firewall zu installieren.
+
+ Ports definieren:
+
+![Firewall1](img/Firewall1.png)
+
+Resulatat:
+
+![Firewall](img/Firewall.png)
 
 ### 2. Reverse-Proxy eingerichtet
 
+
+über URL auf LDAP zugreiffen http://192.168.10.151/phpldapadmin/:
+
+![LDAP](img/ldap.png)
+
 ### 3. Benutzer- und Rechtevergabe ist eingerichtet
 
+Im Vagrantfile wurden die Gruppen erstellt:
+
+![Gruppen erstellen](img/gruppen_erstellen.png)
+
+Mit "vagrant ssh reverse-proxyserver" auf die VM zugreiffen.
+
+Mit Befehl "ll" Gruppenordner anzeigen lassen:
+
+![Gruppen anzeigen](img/gruppen_anzeigen.png)
 
 ### 4. Sicherheitsmassnahmen sind dokumentiert
 
-
+* Vordefinierte Ports wurden für die VMs nach Aussen freigegeben.
+* Durch den Reverse Proxy sind die Devices im LAN von aussen nicht einsehbar.
+* Mit den Firewall Regeln wird das eindringen über offene Ports grösstenteils vermieden.
+* Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse.
 
 ## 5. Kriterium
-[1. Kreativität](#1-kreativität)
-[2. Komplexität](#2-komplexität)
-[3. Umfang](#3-umfang)
-[4. Authentifizierung und Autorisierung via LDAP](#4-authentifizierung-und-autorisierung-via-ldap)
-[5. Vergleich Vorwissen - Wissenszuwachs](#6-vergleich-vorwissen---wissenszuwachs)
-[6. Reflexion](#7-reflexion)
+[1. Authentifizierung und Autorisierung via LDAP](#1-authentifizierung-und-autorisierung-via-ldap)
+[2. Vergleich Vorwissen - Wissenszuwachs](#2-vergleich-vorwissen---wissenszuwachs)
+[3. Reflexion](#3-reflexion)
 
-### 1. Kreativität
- 
+### 1. Authentifizierung und Autorisierung via LDAP
 
-### 2. Komplexität
+über URL auf LDAP zugreiffen http://192.168.10.151/phpldapadmin/:
 
+![LDAP](img/ldap.png)
 
-### 3. Umfang
+### 2. Vergleich Vorwissen - Wissenszuwachs
 
-### 4. Authentifizierung und Autorisierung via LDAP
+Mein Wissenszuwachs ist im Dokument nicht sehr sichtbar. Wenn man jedoch bedenkt, dass ich zu Beginn des Moduls noch nicht einmal wusste, was Vagrant ist, denke ich, dass sich der Wissenszuwachs bald bemerkbar machen wird. Die Arbeit mit Vagrant macht Spaß und das Wissen wächst sehr schnell. Gleichzeitig kann ich einige Dienste automatisieren und kenne Vagrant sehr gut.
 
-### 5. Vergleich Vorwissen - Wissenszuwachs
+### 3. Reflexion
 
+Vor diesem Projekt hatte ich noch nie von Vagrant gehört, es war sehr neu für mich. Anfangs fiel es mir schwer, mit allem umzugehen, aber nach ein paar Mal hatte ich den Dreh raus. Zuerst habe ich die Dokumentation irgendwie ignoriert oder vergessen. In dem Dokument habe ich einen Befehls-Spickzettel erstellt, damit ich ein allgemeines Verständnis davon habe, welcher Befehl funktioniert.
 
-### 6. Reflexion
+Zuerst wollte ich Windows für ein Projekt nutzen, aber leider funktionierte es nicht wie erwartet. Nach diesem Misserfolg habe ich mich entschieden, Linux für ein Projekt zu verwenden, und ich werde es irgendwann in zukünftigen Projekten verwenden können.
+
+Bei der Arbeit an diesem Projekt habe ich fast nie Git-Bash verwendet, nur VS, Virtualbox und Github Desktop. Der Vorteil von VS Code ist, dass man beides zu einem kombinieren kann. Ich kann ein Terminal in VS öffnen und dort Befehle ausführen. Oder push, um die Datei in das Repository zu stellen.
+
+Im weiteren Verlauf lernte ich viel in Vagrant, wusste aber kaum etwas Neues über Linux und Co, da ich durch andere Module und Lehre viel gelernt hatte.
