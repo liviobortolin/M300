@@ -33,16 +33,20 @@ end
       #schliessen aller Ports
       sudo ufw deny out to any
       #ssh port öffnen
-      sudo ufw allow from any to any port 22
+      sudo ufw allow 22
       #http & https port öffnen
-      sudo ufw allow from any to any port 70
-      sudo ufw allow from any to any port 80
-      sudo ufw allow from any to any port 90
-      sudo ufw allow from any to any port 443
-      sudo ufw enable 
+      sudo ufw allow 70
+      sudo ufw allow 80
+      sudo ufw allow 90
+      sudo ufw allow 443
+      sudo ufw -f enable 
+      
       
      SHELL
 end
+
+# Enable agent forwarding over SSH connections
+config.ssh.forward_agent = true
 
 #Passwörtervariabeln 
 proxy_conf = "proxym300services.conf"
@@ -161,6 +165,5 @@ end
       sudo apt-get install -y slapd ldap-utils phpldapadmin
       sudo sed -i -e's/dc=example,dc=com/dc=nodomain/' /etc/phpldapadmin/config.php
       SHELL
-end
 
 end
