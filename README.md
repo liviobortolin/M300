@@ -9,7 +9,7 @@ Folgend erbringe ich meine Leistungsnachweise für die Lernbeurteilung 2 des Mod
 - [K2](#K2)
 - [K3](K3)
 - [K4](#K4)
-- [K4 2](#K5)
+- [K4 2](#K4.2)
 
 
 ## K1
@@ -280,7 +280,7 @@ Mit Befehl "ll" Gruppenordner anzeigen lassen:
 * Mit den Firewall Regeln wird das eindringen über offene Ports grösstenteils vermieden.
 * Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse.
 
-## K4 
+## K4.2
 Umsetzung eigener Ideen und Persönlicher Lernentwicklung<br/>
 [1. Authentifizierung und Autorisierung via LDAP](#1-authentifizierung-und-autorisierung-via-ldap)<br/>
 [2. Vergleich Vorwissen - Wissenszuwachs](#2-vergleich-vorwissen---wissenszuwachs)<br/>
