@@ -1,6 +1,6 @@
 Vagrant.configure(2) do |config|
   
-  config.vm.define "web" do |web|
+  config.vm.define "webserver" do |web|
     web.vm.box = "ubuntu/xenial64"
     web.vm.provider "virtualbox" do |vb|
     vb.memory = "512"  
@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
     SHELL
 end
 
-    config.vm.define "fw" do |fw|
+    config.vm.define "firewall" do |fw|
     fw.vm.box = "ubuntu/xenial64"
     fw.vm.provider "virtualbox" do |vb|
       vb.memory = "1024" 
@@ -52,7 +52,7 @@ config.ssh.forward_agent = true
 proxy_conf = "proxym300services.conf"
 mysql_password = "rootmysql"
 
-config.vm.define "proxy" do |prx|
+config.vm.define "reverse-proxyserver" do |prx|
   prx.vm.box = "ubuntu/xenial64"
   prx.vm.provider "virtualbox" do |vb|
     vb.memory = "1024"  
@@ -165,5 +165,7 @@ end
       sudo apt-get install -y slapd ldap-utils phpldapadmin
       sudo sed -i -e's/dc=example,dc=com/dc=nodomain/' /etc/phpldapadmin/config.php
       SHELL
+
+end
 
 end

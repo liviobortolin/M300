@@ -208,7 +208,7 @@ cd nach C:/Users/Livio/Desktop/TBZ/BIST21/M300/repository/M300
 
 #### Sicherheitsaspekte
 
-
+-Firewall
 
 
 ### 4. Funktionsweise getestet inkl. Dokumentation der Testfälle
