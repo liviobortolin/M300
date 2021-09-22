@@ -14,8 +14,8 @@ Folgend erbringe ich meine Leistungsnachweise für die Lernbeurteilung 2 des Mod
 
 ## K1
 Umbebung auf eigenem Notebook eingerichtet und funktionsfähig
-[1. VirtualBox](#1-virtualbox) <br/>
-[2. Vagrant](#2-vagrant)
+[1. VirtualBox](#1-virtualbox)<br/> 
+[2. Vagrant](#2-vagrant)<br/>
 [3. Visualstudio-Code](#3-visualstudio-code)
 [4. Git-Client](#4-git-client)
 [5. SSH-Key für Client erstellen](#5-ssh-key-für-client-erstellen)
