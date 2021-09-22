@@ -251,7 +251,7 @@ Zuerst wehchsle ich zum Verzeichnis, auf dem sich die VM befinde und führe ansc
 
 Resulatat:
 
-![Firewall](img/Firewall.png)
+![Firewall](img/firewall.png)
 
 ### 2. Reverse-Proxy eingerichtet
 
