@@ -280,9 +280,10 @@ Mit Befehl "ll" Gruppenordner anzeigen lassen:
 * Mit den Firewall Regeln wird das eindringen über offene Ports grösstenteils vermieden.
 * Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse.
 
-## 5. Kriterium
-[1. Authentifizierung und Autorisierung via LDAP](#1-authentifizierung-und-autorisierung-via-ldap)
-[2. Vergleich Vorwissen - Wissenszuwachs](#2-vergleich-vorwissen---wissenszuwachs)
+## K4 
+Umsetzung eigener Ideen und Persönlicher Lernentwicklung<br/>
+[1. Authentifizierung und Autorisierung via LDAP](#1-authentifizierung-und-autorisierung-via-ldap)<br/>
+[2. Vergleich Vorwissen - Wissenszuwachs](#2-vergleich-vorwissen---wissenszuwachs)<br/>
 [3. Reflexion](#3-reflexion)
 
 ### 1. Authentifizierung und Autorisierung via LDAP
