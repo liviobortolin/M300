@@ -19,7 +19,6 @@ Umbebung auf eigenem Notebook eingerichtet und funktionsfähig<br/>
 [2. Vagrant](#2-vagrant)<br/>
 [3. Visualstudio-Code](#3-visualstudio-code)<br/>
 [4. Git-Client](#4-git-client)<br/>
-[5. SSH-Key für Client erstellen](#5-ssh-key-für-client-erstellen)
 
 ### 1. Virtualbox
 
@@ -43,45 +42,32 @@ Nach Anleitung des Lehrers installiert und ausgeführt.
 
 Anleitung: https://github.com/mc-b/M300/tree/master/10-Toolumgebung
 
-### 5. SSH-Key für Client erstellen
-
-Den SSh-Key habe ich ebenfalls bereits vorinstalliert, weshalb ich auch diesen Schritt überspringen konnte.
-
 
 ## K2
 Eigene Lernumgebung (PLE) ist eingerichtet<br/>
-[1. GitHub oder Gitlab-Account ist erstellt](#1-github-oder-gitlab-account-ist-erstellt)<br/>
-[2. Git-Client wurde verwendet](#2-git-client-wurde-verwendet)<br/>
-[3. Dokumentation ist als Mark Down vorhanden](#3-dokumentation-ist-als-mark-down-vorhanden)<br/>
-[4. Mark down-Editor ausgewählt und eingerichtet](#4-mark-down-editor-ausgewählt-und-eingerichtet)<br/>
-[5. Persönlicher Wissenstand](#5-persönlicher-wissenstand)<br/>
-[6. Wichtige Lernschritte sind dokumentiert](#6-wichtige-lernschritte-sind-dokumentiert)
+[1. Dokumentation ist vorhanden](#1-dokumentation-ist-vorhanden)<br/>
+[2. Dokumentation ist strukturiert](#2-dokumentation-ist-strukturiert)<br/>
+[3. Persönlicher Wissenstand](#3-persönlicher-wissenstand)<br/>
+[4. Wichtige Lernschritte sind dokumentiert](#4-wichtige-lernschritte-sind-dokumentiert)
 
-### 1. GitHub oder Gitlab-Account ist erstellt
+### 1. Dokumentation ist vorhanden
 
 GitHub Account: https://github.com/liviobortolin
 
 Ich habe während dieser Arbeit Github-Desktop verwendet. Somit konnte ich alle commit, push, fetch und pull Befehle über ein UI erstellen.7
 
-### 2. Git-Client wurde verwendet
+### 2. Dokumentation ist strukturiert
 
 Wie vom Lehrer vorgeschlagen, nutze ich Git-Bash.
 
 Anleitung: https://github.com/mc-b/M300/tree/master/20-Infrastruktur
 
-### 3. Dokumentation ist als Mark Down vorhanden
 
-Die Dokumentation ist in der README.md Datei.
+### 3. Persönlicher Wissenstand
 
-### 4. Mark down-Editor ausgewählt und eingerichtet
+Anbei dokumentiere ich meinen Wissenstand und definiere meinen Fortschritt.
 
-Die README.md Datei habe ich mit GitHub Desktop jeweils im Visualstudio geöffnet und editiert.
-
-### 5. Persönlicher Wissenstand
-
-#Anbei dokumentiere ich meinen Wissenstand und definiere meinen Fortschritt.
-
-#### Tag 1 25.08.21
+#### Tag 1 22.09.21
 
 
 Zusätzlicher Wissenstand in folgenden Schwerpunkten: 
@@ -96,7 +82,7 @@ Zusätzlicher Wissenstand in folgenden Schwerpunkten:
 
 
 
-#### Tag 2 08.09.2021
+#### Tag 2 06.10.2021
 
 
 
@@ -111,31 +97,20 @@ Zusätzlicher Wissenstand in folgenden Schwerpunkten:
 ##### Git
 
 
-#### Tag 3 22.09.2021
 
 
-Zusätzlicher Wissenstand in folgenden Schwerpunkten: 
-
-##### Linux
-
-##### Virtualisierung
-
-##### Vagrant
-
-##### Git
-
-
-### 6. Wichtige Lernschritte sind dokumentiert
+### 4. Wichtige Lernschritte sind dokumentiert
 
 
 
 ## K3
 [1. Bestehenden Docker-Container kombinieren](#1-bestehenden-docker-container-kombinieren)
-[2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen](#1-bestehende-container-als-backend,-desktop-app-als-frontend-einsetzen)
+[2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen](#2-bestehende-container-als-backend,-desktop-app-als-frontend-einsetzen)
 [3. Volumes zur persistenten Datenablage eingerichtet](#3-volumes-zur-persistenten-datenablage-eingerichtet)
 [4. Kennt die Docker spezifischen Befehle](#4-kennt-die-docker-spezifischen-befehle)
 [5. Eingerichtete Umgebung ist dokumentiert](#5-eingerichtete-umgebung-ist-dokumentiert)
 [6. Funktionsweise getestet inkl. Dokumentation der Testfälle](#6-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
+[7. Projekt mit Git und Markdown dokumentiert](#7-Projekt-mit-Git-und-Markdown-dokumentiert)
 
 ### 1. Bestehenden Docker-Container kombinieren
 
@@ -159,35 +134,37 @@ Zusätzlicher Wissenstand in folgenden Schwerpunkten:
 
 
 
+### 7. Projekt mit Git und Markdown dokumentiert
+
+
+
 ## K4
-[1. Service-Überwachung ist eingerichtet & Aktive Benachrichtigung ist eingerichtet](#1-Service-überwachung-ist-eingerichtet-&-aktive-benachrichtigung-ist-eingerichtet)
-[2. Aspekte der Container-Absicherung](#3-aspekte-der-container-absicherung)
-[3. Sicherheitsmassnahmen sind dokumentiert](#4-sicherheitsmassnahmen-sind-dokumentiert)
-[4. Projekt mit Git und Markdown dokumentiert](#4-projekt-mit-git-und-markdown-dokumentiert)
+Zusätzliche Bewertungspunkte allgemein
+Umsetzung einger Ideen
+[1. Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt Persönlicher Lernentwicklung](#1-Übungsdokumentation-als-Vorlage-für-Modul-Unterlagen-erstellt-Persönlicher-Lernentwicklung)
+[2. Vergleich Vorwissen - Wissenszuwachs](#2-Vergleich-Vorwissen-Wissenszuwachs)
+[3. Reflexion](#3-Reflexion)
 
 
 
-### 1. Sicherheitsaspekte sind implementiert / Service-Überwachung ist eingerichtet & Aktive Benachrichtigung
+### 1.Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt Persönlicher Lernentwicklung
 
 
-### 2.Aspekte der Container-Absicherung
+### 2.Vergleich Vorwissen - Wissenszuwachs]
 
 
 
+### 3.Reflexion
 
-### 3. Sicherheitsmassnahmen sind dokumentiert
-
-
-### 4. Projekt mit Git und Markdown dokumentiert
 
 
 
 ## K5
 [1. Umfangreiche Vernetzung der Container-Infrastruktur](#1-umfangreiche-vernetzung-der-container-infrastruktur)
 [2. Image-Bereitstellung](#2-image-bereitstellung)
-[3. Cloud-Integration](#3-cloud-integration)
-[4. Vergleich Vorwissen - Wissenszuwachs](#6-vergleich-vorwissen---wissenszuwachs)
-[5. Reflexion](#7-reflexion)
+[3. Continous Integration](#3-continous-integration)
+[4. Cloud-Integration](#4-cloud-integration)
+[5. Elemente aus Kubernetesübung sind dokumentiert](#5-Elemente-aus-Kubernetesübung-sind-dokumentiert)
 
 ### 1. Umfangreiche Vernetzung der Container-Infrastruktur
 
@@ -196,14 +173,15 @@ Zusätzlicher Wissenstand in folgenden Schwerpunkten:
 ### 2. Image-Bereitstellung
 
 
-
-### 3. Cloud-Integration
-
+### 3. Continous Integration
 
 
-### 4. Vergleich Vorwissen - Wissenszuwachs
+### 4. Cloud-Integration
+
+
+### 5. Elemente aus Kubenretesübung sind dokumentiert
 
 
 
-### 5. Reflexion
+
 
