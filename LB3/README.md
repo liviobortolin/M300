@@ -104,12 +104,12 @@ Zusätzlicher Wissenstand in folgenden Schwerpunkten:
 
 
 ## K3
-[1. Bestehenden Docker-Container kombinieren](#1-bestehenden-docker-container-kombinieren)
-[2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen](#2-bestehende-container-als-backend,-desktop-app-als-frontend-einsetzen)
-[3. Volumes zur persistenten Datenablage eingerichtet](#3-volumes-zur-persistenten-datenablage-eingerichtet)
-[4. Kennt die Docker spezifischen Befehle](#4-kennt-die-docker-spezifischen-befehle)
-[5. Eingerichtete Umgebung ist dokumentiert](#5-eingerichtete-umgebung-ist-dokumentiert)
-[6. Funktionsweise getestet inkl. Dokumentation der Testfälle](#6-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
+[1. Bestehenden Docker-Container kombinieren](#1-bestehenden-docker-container-kombinieren)<br/>
+[2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen](#2-bestehende-container-als-backend,-desktop-app-als-frontend-einsetzen)<br/>
+[3. Volumes zur persistenten Datenablage eingerichtet](#3-volumes-zur-persistenten-datenablage-eingerichtet)<br/>
+[4. Kennt die Docker spezifischen Befehle](#4-kennt-die-docker-spezifischen-befehle)<br/>
+[5. Eingerichtete Umgebung ist dokumentiert](#5-eingerichtete-umgebung-ist-dokumentiert)<br/>
+[6. Funktionsweise getestet inkl. Dokumentation der Testfälle](#6-funktionsweise-getestet-inkl-dokumentation-der-testfälle)<br/>
 [7. Projekt mit Git und Markdown dokumentiert](#7-Projekt-mit-Git-und-Markdown-dokumentiert)
 
 ### 1. Bestehenden Docker-Container kombinieren
@@ -139,10 +139,10 @@ Zusätzlicher Wissenstand in folgenden Schwerpunkten:
 
 
 ## K4
-Zusätzliche Bewertungspunkte allgemein
-Umsetzung einger Ideen
-[1. Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt Persönlicher Lernentwicklung](#1-Übungsdokumentation-als-Vorlage-für-Modul-Unterlagen-erstellt-Persönlicher-Lernentwicklung)
-[2. Vergleich Vorwissen - Wissenszuwachs](#2-Vergleich-Vorwissen-Wissenszuwachs)
+Zusätzliche Bewertungspunkte allgemein<br/>
+Umsetzung einger Ideen<br/>
+[1. Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt Persönlicher Lernentwicklung](#1-Übungsdokumentation-als-Vorlage-für-Modul-Unterlagen-erstellt-Persönlicher-Lernentwicklung)<br/>
+[2. Vergleich Vorwissen - Wissenszuwachs](#2-Vergleich-Vorwissen-Wissenszuwachs)<br/>
 [3. Reflexion](#3-Reflexion)
 
 
@@ -160,10 +160,11 @@ Umsetzung einger Ideen
 
 
 ## K5
-[1. Umfangreiche Vernetzung der Container-Infrastruktur](#1-umfangreiche-vernetzung-der-container-infrastruktur)
-[2. Image-Bereitstellung](#2-image-bereitstellung)
-[3. Continous Integration](#3-continous-integration)
-[4. Cloud-Integration](#4-cloud-integration)
+Zusätzliche systemtechnische Bewetungspunkte<br/>
+[1. Umfangreiche Vernetzung der Container-Infrastruktur](#1-umfangreiche-vernetzung-der-container-infrastruktur)<br/>
+[2. Image-Bereitstellung](#2-image-bereitstellung)<br/>
+[3. Continous Integration](#3-continous-integration)<br/>
+[4. Cloud-Integration](#4-cloud-integration)<br/>
 [5. Elemente aus Kubernetesübung sind dokumentiert](#5-Elemente-aus-Kubernetesübung-sind-dokumentiert)
 
 ### 1. Umfangreiche Vernetzung der Container-Infrastruktur
