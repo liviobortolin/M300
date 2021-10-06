@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-
+ENV TZ=Europe/Kiev
 # Updaten des Systems
 RUN apt-get update
 # installieren des Apache Dienstes + utils

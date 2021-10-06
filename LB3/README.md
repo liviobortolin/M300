@@ -175,7 +175,18 @@ In meinem Fall ist der Container als Backend sowie als Frontend in Form von PHP 
 
 ### 3. Volumes zur persistenten Datenablage eingerichtet
 
+Docker-Container haben keinen persistenten Speicher, dh wenn ein Administrator einen Container löscht, gehen alle darin enthaltenen Daten verloren. Glücklicherweise bietet Docker eine Lösung für dieses Problem: Volume-Dienste können verwendet werden, um persistenten Speicher für Container bereitzustellen. Erstellen Sie einen Container auf dem Volume:
 
+`docker create -v /dbvolume --name datenbank training/postgres /bin/true`
+
+Mit dem Parameter “-volume” aus „Docker run” wird es möglich, das Volumen „/dbvolume des Containers datenbank auf andere Container zu mounten.
+
+Mit den beiden folgenden Befehlen werden die beiden Container „db1“ und „db2“ erzeugt:
+`sudo docker run -d --volumes-from dbstore --name db1 training/postgre` 
+`sudo docker run -d --volumes-from dbstore --name db2 training/postgres`
+
+Volume löschen:
+`docker rm –v`
 
 ### 4. Kennt die Docker spezifischen Befehle
 
@@ -224,11 +235,17 @@ wait              |Block until one or more containers stop, then print their exi
 
 ### 5. Eingerichtete Umgebung ist dokumentiert
 
-
+Die komplette Umgebung ist im README.md dokumentiert
 
 ### 6. Funktionsweise getestet inkl. Dokumentation der Testfälle
 
-
+Testfall                                                                      | Resultat
+-----------------                                                             | -------------
+Die Container kann gebuildet werden sowie es kann darauf zugegriffen werden.  | 
+Mysql wurde installiert und funktioniert                                      | 
+Es kann auf PHP Myadmin von der VM aus zugegriffen werden                     | 
+Nextcloud kann aufgerufen werden                                              | 
+Cadvisor funktioniert und kann aufgrufen werden                               | 
 
 ### 7. Projekt mit Git und Markdown dokumentiert
 
