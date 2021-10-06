@@ -1,7 +1,7 @@
 #Composefile NextCloud
 
 # Version des Docker composers
-version: '3.3'
+version: '2.0'
 services:
 
   db:
