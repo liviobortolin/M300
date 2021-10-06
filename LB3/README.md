@@ -179,10 +179,17 @@ Jede Funktion kann unabhängig entwickelt und implementiert werden.
 
 Für den Nextcloud Dienst habe ich die Mysql Datenbank mit dem Apache Webserver kombiniert. 
 
+![Nextcloud](img/nextcloud.png)
+
+![phpMyAdmin](img/phpmyadmin.png)
+
+
 
 ### 2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen
 
 In meinem Fall ist der Container als Backend sowie als Frontend in Form von PHP & Mysql eingesetzt. PHP stellt in diesem Fall das Frontend dar, während Mysql das Backend ist.
+
+![FrontEndBackEnd](img/frontEndbackEnd.png)
 
 ### 3. Volumes zur persistenten Datenablage eingerichtet
 
@@ -246,17 +253,22 @@ wait              |Block until one or more containers stop, then print their exi
 
 ### 5. Eingerichtete Umgebung ist dokumentiert
 
+#### Netzwerkplan
+
+![Netzwerkplan](img/netzwerkplan.png)
+
 Die komplette Umgebung ist im README.md dokumentiert
 
 ### 6. Funktionsweise getestet inkl. Dokumentation der Testfälle
 
 Testfall                                                                      | Resultat
 -----------------                                                             | -------------
-Die Container kann gebildet werden sowie es kann darauf zugegriffen werden.   | 
-Mysql wurde installiert und funktioniert                                      | 
-Es kann auf PHP Myadmin von der VM aus zugegriffen werden                     | 
-Nextcloud kann aufgerufen werden                                              | 
-Cadvisor funktioniert und kann aufgrufen werden                               | 
+Die Container kann gebildet werden sowie es kann darauf zugegriffen werden.   | erfolgreich
+Mysql wurde installiert und funktioniert                                      | erfolgreich
+Es kann auf PHP Myadmin vom Host aus zugegriffen werden                       | erfolgreich
+Nextcloud kann aufgerufen werden                                              | erfolgreich
+Cadvisor funktioniert und kann aufgrufen werden                               | erfolgreich
+apache kann als Dockerfile erstellt werden                                    | erfolgreich
 
 ### 7. Projekt mit Git und Markdown dokumentiert
 
@@ -275,6 +287,7 @@ Umsetzung einger Ideen<br/>
 ### 1.Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt Persönlicher Lernentwicklung
 
 
+
 ### 2.Vergleich Vorwissen - Wissenszuwachs
 
 Auch bei dieser Arbeit ist mein Wissenszuwachs hervorragend. Wenn man bedenkt, dass ich zu Beginn des Moduls noch nicht einmal wusste, was Docker und Containerisierung sind, denke ich, dass sich der Wissenszuwachs schnell bemerkbar machen wird. Zu Beginn von LB3 brauchte ich weitere Programme, um mich mit Docker vertraut zu machen. Ich habe viel Zeit damit verbracht, mich damit vertraut zu machen, sodass ich meinen ursprünglichen Plan nicht verwirklichen konnte. Trotzdem macht die Arbeit mit Docker Spaß und das Wissen wächst sehr schnell. Gleichzeitig verstehe ich Docker-Befehle und mein Wissen kann vor allem in der Theorie sehr erweitert werden.
@@ -290,7 +303,7 @@ Zusätzliche systemtechnische Bewetungspunkte<br/>
 [2. Image-Bereitstellung](#2-image-bereitstellung)<br/>
 [3. Continous Integration](#3-continous-integration)<br/>
 [4. Cloud-Integration](#4-cloud-integration)<br/>
-[5. Elemente aus Kubernetesübung sind dokumentiert](#5-Elemente-aus-Kubernetesübung-sind-dokumentiert)
+[5. Eigene Ideen](#5-Eigene-Ideen)
 
 ### 1. Umfangreiche Vernetzung der Container-Infrastruktur
 
@@ -298,22 +311,26 @@ Wie bereits oberhalb erwähnt vernetzte ich die Container untereinander. Einerse
 
 ### 2. Image-Bereitstellung
 
-Meine erstellten Images sind auf Github hochgeladen
+Meine erstellten Images sind auf Github hochgeladen und für weitere Projekte zugreifbar.
 
 ### 3. Continous Integration
 
-Unter Conitnous Intergration verstehe ich 
+Unter Conitnous Intergration verstehe ich, dass andere an meinen Projekten weiterarbeiten können. Durch das, dass ich mein ganzes Projekt OpenSource auf GitHub veröffentlicht habe, sollt dieses Kriterium gewährleistet werden.
 
 ### 4. Cloud-Integration
 
 Als Cloud-Umgebund habe ich Nextcloud genommen. Hierbei kann man dies gut mit dem Mysql und Apache verknüpfen.
 
-### 5. Elemente aus Kubenretesübung sind dokumentiert
+![Nextcloud](img/nextcloud.png)
 
+### 5. Eigene Ideen
 
-vagrant up
-vagrant ssh
-cd Vagrant/LB3/docker
+Als eigene Idee habe ich zusätzlich noch folgednes Monitoringtool aufgesetzt.
 
-sudo docker-compose up
-sudo docker build -t apache:3.0 .
+Eine gute Monitoring-Lösung sollte auf einen Blick den Zustand des Systems zeigen und rechtzeitig warnen, wenn Ressourcen knapp werden. Docker Tools cAdvisor von Google ist das am häufigsten eingesetzte Monitoring-Tool für Docker.
+
+Dieses Programm ist als Container verfügbar und man kann darauf zugreifen. Der folgende Command muss dazu aktiviert werden:
+
+"docker run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -p 8080:8080 google/cadvisor:latest"
+
+![cAdvisor](img/cadvisor.png)
