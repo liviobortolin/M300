@@ -241,7 +241,7 @@ Die komplette Umgebung ist im README.md dokumentiert
 
 Testfall                                                                      | Resultat
 -----------------                                                             | -------------
-Die Container kann gebuildet werden sowie es kann darauf zugegriffen werden.  | 
+Die Container kann gebildet werden sowie es kann darauf zugegriffen werden.   | 
 Mysql wurde installiert und funktioniert                                      | 
 Es kann auf PHP Myadmin von der VM aus zugegriffen werden                     | 
 Nextcloud kann aufgerufen werden                                              | 

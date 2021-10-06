@@ -1,6 +1,5 @@
 FROM ubuntu:latest
-ENV TZ=Europe/Kiev
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Updaten des Systems
 RUN apt-get update
 # installieren des Apache Dienstes + utils
@@ -23,6 +22,10 @@ RUN /etc/init.d/apache2 start
 
 # Port 80 wird freigegeben
 EXPOSE 80
+
+# Zeitzone festlegen
+ENV TZ=Europe/Kiev
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # In diesem Ordener müssen die Index.html Files sein
 VOLUME /var/www/html
