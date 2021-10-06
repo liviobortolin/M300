@@ -98,18 +98,29 @@ Repository erstellt mit einem Readme.md
 #### Tag 2 06.10.2021
 
 
+Heute haben wir das Modul 300 beendet. Die LB3 war sehr schwer, da wir sehr wenig Zeit hatten das Projekt umzusetzen.
 
 Zusätzlicher Wissenstand in folgenden Schwerpunkten: 
 
 ##### Linux
 
+Ich habe über Inux aus früheren Modulen gelernt. Sie können es manchmal in Ihrem Unternehmen verwenden, um Fehler in Netzwerk- oder Dateibereichen zu beheben.
+
 ##### Virtualisierung
+
+Wir haben viel an der Virtualisierung in Schulen und ÜK gearbeitet. Auch im Betrieb setzen wir eine virtualisierte Umgebung ein
 
 ##### Vagrant
 
+Mit den Vorlagen vom Lehrer habe ich mal Vagrant ausprobiert.
+
+Vagrant neu kennengelernt -Vagrantfile erstellt und editiert -Vagrant init/up/destroy -f
+
 ##### Git
 
+Git kannte ich bereits schon von den vergangenen Modulen
 
+Repository erstellt mit einem Readme.md
 
 
 ### 4. Wichtige Lernschritte sind dokumentiert
@@ -304,4 +315,5 @@ vagrant up
 vagrant ssh
 cd Vagrant/LB3/docker
 
-
+sudo docker-compose up
+sudo docker build -t apache:3.0 .
