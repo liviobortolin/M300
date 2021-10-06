@@ -249,7 +249,7 @@ Cadvisor funktioniert und kann aufgrufen werden                               |
 
 ### 7. Projekt mit Git und Markdown dokumentiert
 
-Ich habe die komplette Dokumentation und Beschreibung in README.md fle abgelegt.
+Ich habe die komplette Dokumentation und Beschreibung in README.md file abgelegt.
 
 
 ## K4
@@ -291,6 +291,7 @@ Meine erstellten Images sind auf Github hochgeladen
 
 ### 3. Continous Integration
 
+Unter Conitnous Intergration verstehe ich 
 
 ### 4. Cloud-Integration
 
@@ -299,6 +300,8 @@ Als Cloud-Umgebund habe ich Nextcloud genommen. Hierbei kann man dies gut mit de
 ### 5. Elemente aus Kubenretesübung sind dokumentiert
 
 
-
+vagrant up
+vagrant ssh
+cd Vagrant/LB3/docker
 
 
