@@ -1,40 +1,56 @@
-#Composefile NextCloud
+version: '3' 
 
-# Version des Docker composers
-version: '2.0'
 services:
 
   db:
-# Installation und Konfiguration der Datenbank
     image: mariadb
-    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
-# Darf immer neustarten
     restart: always
-# synchronisiert das DB Verzeichnis mit dem verzeichnis auf dem Container 
     volumes:
-      - ./db:/var/lib/mysql
+      - /opt/dockervolumes/nextcloud/mysql:/var/lib/mysql
     environment:
-# Setzen der User und der Passwörter
-      MYSQL_ROOT_PASSWORD: "root"
-      MYSQL_DATABASE: "nextcloud"
-      MYSQL_USER: "nextcloud"
-      MYSQL_PASSWORD: "root"
+      - MYSQL_ROOT_PASSWORD=Qwertzu1234@_c321
+    env_file:
+      - db.env
+    networks:
+      - nextcloudnet
 
-  app:
-# Installation und Konfiguration von Nextcloud
-    image: nextcloud
-# Festlegen der erreichbaren Ports
-    ports:
-      - 8100:80
-# defnieren des Volumes
-    volumes:
-      - ./nextcloud:/var/www/html
+  backup-mysql:
+    image: dsteinkopf/backup-all-mysql:latest
     restart: always
-#Festlegen der Benutzer und der Passwörter
-    environment: 
-        MYSQL_HOST: "db"
-        MYSQL_DATABASE: "nextcloud"
-        MYSQL_USER: "nextcloud"
-        MYSQL_PASSWORD: "root"
-        NEXTCLOUD_ADMIN_USER: "admin"
-        NEXTCLOUD_ADMIN_PASSWORD: "root"
+    environment:
+      - BACKUP_INTERVAL=86400
+      - BACKUP_FIRSTDELAY=4000
+      - 'MYSQL_CONNECTION_PARAMS=--user=root --host=db --password=sehrgeheim123'
+    links:
+      - db
+    volumes:
+      - /opt/dockervolumes/nextcloud/mysql-backup:/var/dbdumps
+    networks:
+      - nextcloudnet
+
+  nextcloud:
+    image: nextcloud:apache
+    restart: always
+    ports:
+      - 8094:80
+    links:
+      - db
+    volumes:
+      - /opt/dockervolumes/nextcloud/var_www_html:/var/www/html
+      - /opt/dockervolumes/nextcloud/data:/var/www/html/data
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    environment:
+      - MYSQL_HOST=db
+      - NEXTCLOUD_ADMIN_USER=admin
+      - NEXTCLOUD_ADMIN_PASSWORD=Qwertzu1234@_c321
+    env_file:
+      - db.env
+    networks:
+      - nextcloudnet
+
+
+networks:
+
+  nextcloudnet:
+    # empty

@@ -1,5 +1,6 @@
 FROM ubuntu:latest
 ENV TZ=Europe/Kiev
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 # Updaten des Systems
 RUN apt-get update
 # installieren des Apache Dienstes + utils

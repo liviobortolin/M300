@@ -283,16 +283,18 @@ Zusätzliche systemtechnische Bewetungspunkte<br/>
 
 ### 1. Umfangreiche Vernetzung der Container-Infrastruktur
 
-
+Wie bereits oberhalb erwähnt vernetzte ich die Container untereinander. Einerseitz benutzt der Nextcloud Container die Dienstleistungungen des Mysql sowie des Apache Containers. Zusätzlich benutzt der cAdvisor die Informationen aller Container und wertet sie aus.
 
 ### 2. Image-Bereitstellung
 
+Meine erstellten Images sind auf Github hochgeladen
 
 ### 3. Continous Integration
 
 
 ### 4. Cloud-Integration
 
+Als Cloud-Umgebund habe ich Nextcloud genommen. Hierbei
 
 ### 5. Elemente aus Kubenretesübung sind dokumentiert
 
