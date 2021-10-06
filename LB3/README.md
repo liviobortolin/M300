@@ -1,7 +1,7 @@
 # M300 - Plattformübergreifende Dienste in ein Netzwerk integrieren
 
 
-## LB2 Vagrantfile
+## LB3 Docker
 
 Folgend erbringe ich meine Leistungsnachweise für die Lernbeurteilung 3 des Modul 300. 
 
