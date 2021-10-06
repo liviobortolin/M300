@@ -3,7 +3,7 @@ version: '2'
 services:
 
   db:
-    image: mariadb
+    image: mariadb:10.5
     restart: always
     volumes:
       - /opt/dockervolumes/nextcloud/mysql:/var/lib/mysql
