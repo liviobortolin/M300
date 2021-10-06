@@ -114,7 +114,46 @@ Zusätzlicher Wissenstand in folgenden Schwerpunkten:
 
 ### 4. Wichtige Lernschritte sind dokumentiert
 
+Die Vorteile der Containerisierung sind:
 
+- Resourcenbedarf (weniger Resourcen als VMs)
+- Effizient (Container nutzen Serverresourcen sehr dynamisch aus )
+- Performance (Container haben bringen mehr Leistung, als VMs, weil das Gastbetriebssystem auch seine eigenen Speicheranforderungen erfüllen und wertvollen Arbeitsspeicher des Hosts belegen muss)
+
+### Docker
+
+Docker ist eine Software zur Isolierung von Anwendungen mit Containervirtualisierung. Die Software benötigt keine Lizenzen.
+
+Docker nahm damals die bestehende Linux-Containertechnologie auf und verpackte und erweiterte sie in vielerlei Hinsicht – vor allem durch portable Images und eine benutzerfreundliche Schnittstelle.
+
+**Architektur**
+Im Folgenden sind alle Elemnte und ihre Aufgaben aufgelistet:
+
+**Docker Deamon**
+- Erstellen, Ausführen und Überwachen der Container
+- Bauen und Speichern von Images.
+
+**Docker Client**
+- Docker wird über die Kommandozeile (CLI) mittels des Docker Clients bedient
+- Kommuniziert per HTTP REST mit dem Docker Daemon
+
+**Images**
+- Images sind gebuildete Umgebungen welche als Container gestartet werden können
+- Images sind nicht veränderbar, sondern können nur neu gebuildet werden.
+- Images bestehen aus Namen und Version (TAG), z.B. ubuntu:16.04.
+
+**Container**
+- Container sind die ausgeführten Images
+- Ein Image kann beliebig oft als Container ausgeführt werden
+- Container bzw. deren Inhalte können verändert werden, dazu werden sogenannte Union File Systems verwendet, welche nur die Änderungen zum original Image speichern.
+
+**Docker Registry**
+- In Docker Registries werden Images abgelegt und verteilt
+
+### Microservices
+Microservices sind ein Architekturkonzept der Anwendungsentwicklung. Ein Microservice ist also eine Kernfunktion einer Anwendung und er wird unabhängig von anderen Services ausgeführt.
+
+Jede Funktion kann unabhängig entwickelt und implementiert werden.
 
 ## K3
 [1. Bestehenden Docker-Container kombinieren](#1-bestehenden-docker-container-kombinieren)<br/>
@@ -125,11 +164,14 @@ Zusätzlicher Wissenstand in folgenden Schwerpunkten:
 [6. Funktionsweise getestet inkl. Dokumentation der Testfälle](#6-funktionsweise-getestet-inkl-dokumentation-der-testfälle)<br/>
 [7. Projekt mit Git und Markdown dokumentiert](#7-Projekt-mit-Git-und-Markdown-dokumentiert)
 
-### 1. Bestehenden Docker-Container kombinieren
+### 1. Bestehende Docker-Container kombinieren
+
+Für den Nextcloud Dienst habe ich die Mysql Datenbank mit dem Apache Webserver kombiniert. 
 
 
 ### 2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen
 
+In meinem Fall ist der Container als Backend sowie als Frontend in Form von PHP & Mysql eingesetzt. PHP stellt in diesem Fall das Frontend dar, während Mysql das Backend ist.
 
 ### 3. Volumes zur persistenten Datenablage eingerichtet
 
@@ -205,9 +247,9 @@ Umsetzung einger Ideen<br/>
 ### 1.Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt Persönlicher Lernentwicklung
 
 
-### 2.Vergleich Vorwissen - Wissenszuwachs]
+### 2.Vergleich Vorwissen - Wissenszuwachs
 
-
+Auch bei dieser Arbeit ist mein Wissenszuwachs hervorragend. Wenn man bedenkt, dass ich zu Beginn des Moduls noch nicht einmal wusste, was Docker und Containerisierung sind, denke ich, dass sich der Wissenszuwachs schnell bemerkbar machen wird. Zu Beginn von LB3 brauchte ich weitere Programme, um mich mit Docker vertraut zu machen. Ich habe viel Zeit damit verbracht, mich damit vertraut zu machen, sodass ich meinen ursprünglichen Plan nicht verwirklichen konnte. Trotzdem macht die Arbeit mit Docker Spaß und das Wissen wächst sehr schnell. Gleichzeitig verstehe ich Docker-Befehle und mein Wissen kann vor allem in der Theorie sehr erweitert werden.
 
 ### 3.Reflexion
 
