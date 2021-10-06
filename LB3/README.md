@@ -294,7 +294,7 @@ Meine erstellten Images sind auf Github hochgeladen
 
 ### 4. Cloud-Integration
 
-Als Cloud-Umgebund habe ich Nextcloud genommen. Hierbei
+Als Cloud-Umgebund habe ich Nextcloud genommen. Hierbei kann man dies gut mit dem Mysql und Apache verknüpfen.
 
 ### 5. Elemente aus Kubenretesübung sind dokumentiert
 
